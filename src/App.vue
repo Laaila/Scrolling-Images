@@ -1,30 +1,40 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <LayoutView />
+  </div>
 </template>
 
+<script>
+import { defineComponent } from "vue";
+
+import LayoutView from "@/views/LayoutView.vue";
+export default defineComponent({
+  name: "App",
+  components: {
+    LayoutView,
+  },
+});
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", "Careem", sans-serif;
+  background-color: #b7b19f;
 }
 
-nav {
-  padding: 30px;
+ul {
+  list-style: none;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
