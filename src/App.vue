@@ -25,7 +25,7 @@ export default defineComponent({
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", "Careem", sans-serif;
+  font-family: "Montserrat", serif;
   background-color: #b7b19f;
 }
 
