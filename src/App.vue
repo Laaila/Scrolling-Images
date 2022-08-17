@@ -24,6 +24,9 @@ export default defineComponent({
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", serif;
   background-color: #b7b19f;

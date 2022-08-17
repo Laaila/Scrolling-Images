@@ -22,7 +22,7 @@ export default {
 <style scoped>
 .columns-grid .image-box {
   height: var(--grid-item-height);
-  height: 350px;
+  height: 300px;
   width: 100%;
   overflow: hidden;
   cursor: pointer;
