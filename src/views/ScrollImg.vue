@@ -17,6 +17,11 @@
           <ImageBox num="13" />
           <ImageBox num="14" />
           <ImageBox num="15" />
+          <ImageBox num="28" />
+          <ImageBox num="29" />
+          <ImageBox num="30" />
+          <ImageBox num="38" />
+          <ImageBox num="39" />
         </div>
 
         <div class="columns-grid" id="triangle2">
@@ -28,7 +33,12 @@
           <ImageBox num="18" />
           <ImageBox num="19" />
           <ImageBox num="20" />
-          <ImageBox num="21" />
+          <ImageBox num="31" />
+          <ImageBox num="32" />
+          <ImageBox num="33" />
+          <ImageBox num="34" />
+          <ImageBox num="40" />
+          <ImageBox num="41" />
         </div>
         <div class="columns-grid" id="triangle3">
           <ImageBox num="7" />
@@ -40,6 +50,11 @@
           <ImageBox num="25" />
           <ImageBox num="26" />
           <ImageBox num="27" />
+          <ImageBox num="35" />
+          <ImageBox num="36" />
+          <ImageBox num="37" />
+          <ImageBox num="42" />
+          <ImageBox num="7" />
         </div>
       </section>
     </div>
@@ -116,20 +131,20 @@ export default defineComponent({
 }
 
 h2 {
-  font-size: 12rem;
+  font-size: 9rem;
   font-weight: lighter;
   text-align: center;
   width: 100%;
 }
 .up-title {
   position: fixed;
-  top: -120px;
+  top: -100px;
   z-index: 3;
 }
 
 .down-title {
   position: fixed;
-  bottom: -120px;
+  bottom: -100px;
   z-index: 3;
 }
 
@@ -154,9 +169,74 @@ h2 {
 }
 
 .columns-grid:nth-child(odd) {
-  transform: translateY(-70%);
+  transform: translateY(-65%);
 }
 .columns-grid:nth-child(even) {
   margin-top: 70px;
+}
+
+@media (min-width: 1536px) {
+  h2 {
+    font-size: 15rem;
+  }
+
+  .up-title {
+    top: -150px;
+  }
+
+  .down-title {
+    bottom: -150px;
+  }
+}
+
+@media (max-width: 991px) {
+  .scroll-img {
+    height: 450vh;
+  }
+  .grid {
+    gap: 1rem;
+  }
+  .grid-container {
+    padding: 0 1rem;
+  }
+
+  .columns-grid {
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 7rem;
+  }
+
+  .up-title {
+    top: -80px;
+  }
+
+  .down-title {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .grid {
+    gap: 1rem;
+  }
+  .grid-container {
+    padding: 0 1rem;
+  } */
+  .scroll-img {
+    height: 350vh;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+
+  .up-title {
+    top: -30px;
+  }
+
+  .down-title {
+    bottom: -30px;
+  }
 }
 </style>

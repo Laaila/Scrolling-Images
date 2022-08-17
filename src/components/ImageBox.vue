@@ -55,6 +55,23 @@ export default {
   transform: scale(1.3, 1.1);
 }
 
+@media (min-width: 1536px) {
+  .columns-grid .image-box {
+    height: 450px;
+  }
+}
+
+@media (max-width: 991px) {
+  .columns-grid .image-box {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .columns-grid .image-box {
+    height: 100px;
+  }
+}
 /* .columns-grid .image-box:hover img {
   padding: 10px 0;
 } */
