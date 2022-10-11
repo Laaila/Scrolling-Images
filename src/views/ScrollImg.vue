@@ -454,7 +454,7 @@ h2 {
 .columns-grid {
   position: absolute;
   width: calc(100%);
-  transition: transform 1s ease-in-out;
+  // transition: transform 0.1s ease-in-out;
 }
 
 .columns-grid.hidden {
